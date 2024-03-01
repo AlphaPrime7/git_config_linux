@@ -1,0 +1,40 @@
+---
+title: "R GIT"
+output: html_notebook
+---
+
+## Install Git
+
+```{Bash}
+which git
+git --version ## git version 2.34.1
+```
+
+## Configure Git Globally using Terminal
+
+```{Bash}
+git config --global user.name "*****"
+git config --global user.email "********"
+git config --list
+```
+
+## Configure Git Globally using Rstudio
+
+```{r}
+#Edit the .gitconfig file that pops up as below
+library(usethis)
+usethis::edit_git_config() #In Ubuntu toggle the hidden files
+```
+
+```{bash}
+[user]
+	name = *****
+	email = *****************
+```
+
+```{r}
+#Another way is to perform the same global config procedure in Rstudio
+use_git_config(user.name = "*****", user.email = "***********")
+```
+
+
