@@ -56,3 +56,7 @@ use_github() #creates the repo on github
 ```
 
 
+## End Remarks
+
+- Completed a setup of git and github with Rstudio in Ubuntu.
+- Happy gitting.
